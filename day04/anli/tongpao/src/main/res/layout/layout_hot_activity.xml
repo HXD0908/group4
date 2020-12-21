@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="12dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_imge"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toLeftOf="@id/iv_imge"
+        app:layout_constraintRight_toRightOf="@id/iv_imge"
+        app:layout_constraintTop_toBottomOf="@id/iv_imge" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:drawableLeft="@drawable/ic_location"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintLeft_toLeftOf="@id/iv_imge"
+        android:maxLength="5"
+        android:ellipsize="end"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_time"
+        app:layout_constraintRight_toRightOf="@id/iv_imge"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        android:layout_marginTop="12dp"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

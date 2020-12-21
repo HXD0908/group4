@@ -1,0 +1,4 @@
+include ':tongpao'
+include ':jetpack'
+include ':app'
+rootProject.name = "anli"

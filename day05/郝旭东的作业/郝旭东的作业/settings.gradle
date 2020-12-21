@@ -1,0 +1,2 @@
+rootProject.name='xun_day05'
+include ':app'

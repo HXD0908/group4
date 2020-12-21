@@ -1,0 +1,87 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.jy.day04"
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+//  Butterknife android下面初始化添加:
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //RxJava
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.4'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'//retrofit 库
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'//转换器，请求结果转换成Model
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'//配合Rxjava 使用
+
+// 	侧滑依赖，TabLayout
+    implementation 'com.android.support:design:28.0.0'
+
+//	RecycleView（多布局）依赖
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+//	Glide 读取网络图片的依赖
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+
+//	tablayout依赖：
+    implementation 'com.android.support:design:28.0.0'
+
+//      动态权限
+    implementation 'com.github.dfqin:grantor:2.5'
+
+//      EventBus依赖
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+
+//	轮播图（Banner）的依赖 --->轮播图写完以后记得调用 start(); 方法
+    implementation 'com.youth.banner:banner:1.4.10'
+
+//	(适配器是 继承的Recycler.Adapter)下拉刷新，上拉加载数据,加载更多依赖
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'
+
+//  文章卡片（cardView）效果的依赖
+    implementation 'com.android.support:cardview-v7:28.0.0'
+
+//  本地广播依赖
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
+
+// 第三方视频(饺子视频)依赖
+    implementation 'cn.jzvd:jiaozivideoplayer:7.5.0'
+
+// Butterknife依赖 (控件方便)
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+
+
+}
