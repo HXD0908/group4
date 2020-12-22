@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">day06</string>
+    <string name="connec_exception">网络链接异常</string>
+    <string name="ssl_exception">ssl证书异常</string>
+    <string name="json_parse_exception">json解析异常</string>
+    <string name="complete">网络请求完成</string>
+
+
+    <string name="homet_title">首页</string>
+    <string name="find_title">发现</string>
+    <string name="shopping_title">商城</string>
+    <string name="my_title">我的</string>
+</resources>
