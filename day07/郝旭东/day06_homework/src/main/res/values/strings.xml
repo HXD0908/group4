@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">day06_homework</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="one">首页</string>
+    <string name="two">广场</string>
+    <string name="three">  </string>
+    <string name="fore">我的</string>
+    <string name="five">推荐</string>
+</resources>
