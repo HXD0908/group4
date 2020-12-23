@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaiDuMapActivity">
+
+
+    <Button
+        android:id="@+id/btn_putong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="普通交通地图"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/_weixing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卫星地图"
+        app:layout_constraintLeft_toRightOf="@id/btn_putong"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/_kongbai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="空白地图"
+        app:layout_constraintLeft_toRightOf="@id/_weixing"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/_reli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热力地图"
+        app:layout_constraintLeft_toRightOf="@id/_kongbai"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_putong" />
+</androidx.constraintlayout.widget.ConstraintLayout>
