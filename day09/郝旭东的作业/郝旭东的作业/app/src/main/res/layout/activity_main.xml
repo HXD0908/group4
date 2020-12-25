@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="@dimen/dp_375"
+        android:layout_height="@dimen/dp_65"
+        android:background="@color/colorAccent"
+        app:title="首页" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_375"
+        android:layout_height="@dimen/dp_175"
+        android:scaleType="fitXY"
+        android:src="@drawable/a" />
+
+    <TextView
+        android:layout_width="@dimen/dp_375"
+        android:layout_height="@dimen/dp_55"
+        android:text="|诗歌群PK"
+        android:textSize="@dimen/dp_35" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_335"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="@dimen/dp_335"
+            android:layout_height="@dimen/dp_55"
+            android:gravity="center"
+            android:text="8月1日晚8点准时PK，期待您的观战"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_335"
+            android:layout_height="@dimen/dp_150"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp_110"
+                android:layout_height="@dimen/dp_125"
+                android:scaleType="fitXY"
+                android:src="@drawable/f" />
+
+            <TextView
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_125"
+                android:gravity="center"
+                android:text="VS"
+                android:textSize="50dp" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_110"
+                android:layout_height="@dimen/dp_125"
+                android:scaleType="fitXY"
+                android:src="@drawable/c" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_20"
+            android:gravity="center"
+            android:text="这两个诗社你更看好谁"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_335"
+            android:layout_height="@dimen/dp_55"
+            android:scaleType="fitXY"
+            android:src="@drawable/b" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="@dimen/dp_375"
+        android:layout_height="@dimen/dp_55"
+        android:text="|荣誉诗人"
+        android:textSize="@dimen/dp_35" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200" />
+</LinearLayout>
