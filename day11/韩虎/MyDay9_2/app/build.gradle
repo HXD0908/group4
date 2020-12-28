@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.example.myday9_2"
+        minSdkVersion 29
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'						//retrofit2+Gson
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'						//retrofit+rxjava
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'				//转换器，请求结果转换成Model
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'				//配合Rxjava 使用
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'						//Retrofit网络解析
+    implementation 'io.reactivex.rxjava2:rxjava:2.0.1'							//需与以上依赖同步
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0'						//Glide
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'					//Support
+
+    implementation 'com.youth.banner:banner:1.4.10'								//轮播图
+
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'					//Recyclerview
+
+    implementation 'com.android.support:design:29.+'							//TabLayout
+
+    implementation 'org.greenrobot:eventbus:3.1.1'								//EventBus
+
+    compile 'cn.jzvd:jiaozivideoplayer:6.2.9'									//饺子视频播放器5.0
+
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.2' 			//自动刷新权限
+
+
+    implementation 'com.google.code.gson:gson:2.6.2'							//Gson 库
+
+    implementation 'com.squareup.okhttp3:okhttp:3.12.0'							//okHttp
+
+    implementation 'com.jakewharton:butterknife:10.0.0'                         //butterknife依赖
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'           //两条依赖必须同时添加
+
+    implementation 'com.google.dagger:dagger:2.11'								//两条依赖必须同时添加
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.11'				//Dagger2依赖
+
+}

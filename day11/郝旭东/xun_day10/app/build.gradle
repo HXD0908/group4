@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.example.xun_day10"
+        minSdkVersion 22
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //Retrofe结合RxJava依赖
+    //Retrofe的依赖
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0' // 必要依赖，解析json字符所用
+    //Rxjava的依赖
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0' // 必要依赖，和Rxjava结合必须用到，下面会提到
+    implementation "io.reactivex.rxjava2:rxjava:2.1.3" // 必要rxjava2依赖
+    implementation "io.reactivex.rxjava2:rxandroid:2.0.1" // 必要rxandrroid依赖，切线程时需要用到
+    //图片加载:
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    //侧滑菜单:
+    implementation 'com.android.support:design:30.1.0'
+    //RecyclerView
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    //TabLayout底部导航栏:
+    implementation 'com.android.support:design:30.+'
+    //Smart刷新/加载:
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-28'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    //banner轮播图
+    implementation 'com.youth.banner:banner:1.4.10'
+    //eventbus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    //动态权限
+    implementation 'com.github.dfqin:grantor:2.5'
+    //饺子依赖
+    implementation 'cn.jzvd:jiaozivideoplayer:6.2.9'
+    //数据库依赖
+    implementation 'org.greenrobot:greendao:3.3.0' // add library
+    //Daggre2依赖：
+    implementation 'com.google.dagger:dagger:2.11'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.11'
+    implementation 'me.tatarka:gradle-retrolambda:3.2.1'
+
+//    黄油刀配置
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+
+}
