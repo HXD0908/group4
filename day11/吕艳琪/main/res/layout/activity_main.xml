@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:text="首页"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_200"
+            android:src="@drawable/aa"
+            />
+        <TextView
+            android:paddingLeft="@dimen/dp_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="出行必备"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_10"
+            >
+            <ImageView
+                android:layout_width="@dimen/dp_170"
+                android:layout_height="@dimen/dp_70"
+                android:layout_weight="1"
+                android:src="@drawable/bb"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/dp_170"
+                android:layout_height="@dimen/dp_70"
+                android:layout_weight="1"
+                android:src="@drawable/cc"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_5"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="海外攻略"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看更多"
+                android:layout_marginLeft="@dimen/dp_220"
+                android:textColor="@color/colorAccent"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_10"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="@dimen/dp_96"
+                android:layout_weight="1"
+                android:src="@drawable/dd"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/dp_150"
+                android:layout_height="@dimen/dp_96"
+                android:layout_weight="1"
+                android:src="@drawable/ee"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_5"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="国内攻略"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看更多"
+                android:layout_marginLeft="@dimen/dp_220"
+                android:textColor="@color/colorAccent"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_10"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_96"
+                android:layout_weight="1"
+                android:src="@drawable/ff"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_96"
+                android:layout_weight="1"
+                android:src="@drawable/gg"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_96"
+                android:layout_weight="1"
+                android:src="@drawable/hh"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_10"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="魅力海岛"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看更多"
+                android:layout_marginLeft="@dimen/dp_220"
+                android:textColor="@color/colorAccent"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="@dimen/dp_10"
+            android:layout_width="@dimen/dp_345"
+            android:layout_height="@dimen/dp_200"
+           android:layout_gravity="center_horizontal"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/dp_345"
+                android:layout_height="@dimen/dp_200"
+                android:src="@drawable/ii"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_10"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="悠然古镇"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="@dimen/dp_10"
+            android:layout_width="@dimen/dp_315"
+            android:layout_height="@dimen/dp_180"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/dp_315"
+                android:layout_height="@dimen/dp_180"
+                android:src="@drawable/kk"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
